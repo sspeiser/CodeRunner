@@ -25,14 +25,16 @@ RUN apt-get install -y --no-install-recommends \
     ninja-build \
     ffmpeg \
     libcairo2-dev \
-    libpango1.0-dev
+    libpango1.0-dev \
+    # Java
+    openjdk-21-jdk
     
 ##################################################################################
 ### JAVA
 #RUN apt-get install -y default-jdk
-RUN curl -O https://download.oracle.com/java/24/latest/jdk-24_linux-x64_bin.deb \
-    && dpkg -i jdk-24_linux-x64_bin.deb \
-    && rm jdk-24_linux-x64_bin.deb
+# RUN curl -O https://download.oracle.com/java/24/latest/jdk-24_linux-x64_bin.deb \
+  #  && dpkg -i jdk-24_linux-x64_bin.deb \
+   # && rm jdk-24_linux-x64_bin.deb
 
 
 ### Python3
